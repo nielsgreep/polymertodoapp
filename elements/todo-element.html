@@ -13,6 +13,7 @@
 <dom-module id="element-name">
 <style>
   /* CSS rules for your element */
+
   .todo {
   padding: 10px;
 }
@@ -62,8 +63,8 @@
 }
 
 </style>
-  <template>
-    <paper-material class="todo" elevation="1">
+<template>
+        <paper-material class="todo" elevation="1">
         <paper-checkbox checked="{{completed}}"></paper-checkbox>
         <paper-fab hidden={{editing}}  icon="icons:create" on-tap="doEdit" mini></paper-fab>
         <paper-fab hidden={{!editing}} icon="icons:done"   on-tap="doEdit" mini></paper-fab>
